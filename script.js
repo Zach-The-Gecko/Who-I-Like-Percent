@@ -22,6 +22,12 @@ const percentDisplay = document.querySelector("#percent");
 const getFormInputs = () =>
   Array.from(document.querySelectorAll("#form input"));
 
+const clearFields = () => {
+  let formInputs = getFormInputs();
+  formInputs[0].value = "";
+  formInputs[1].value = "";
+};
+
 const convertToPercent = (percent) => {
   if (!(percent <= 1)) {
     for (
@@ -65,12 +71,18 @@ form.addEventListener("submit", (e) => {
     who: items[0].value,
     crush: items[1].value,
   };
+
+  let date = new Date();
   db.collection("db")
     .doc("people")
     .set(
       {
-        [objectForFirebase.who]: encrypt(objectForFirebase.crush, "wiverson"),
+        [objectForFirebase.who + "_" + date.getTime()]: encrypt(
+          objectForFirebase.crush,
+          "wiverson"
+        ),
       },
       { merge: true }
     );
+  clearFields();
 });
