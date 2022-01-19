@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who I Like Percent</title>
+  </head>
+  <body>
+    <h1>Get a Percent</h1>
+    <p id="instructions">
+      Put in your name and the name of the person you like, and it will give you
+      a percent for your compatability based on your names
+    </p>
+    <h2 id="percent"></h2>
+    <form id="form">
+      <input name="myName" type="text" placeholder="Your Name" />
+      <input name="theirName" type="text" placeholder="Who You Like" />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="/cipherLib.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
