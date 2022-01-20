@@ -6,7 +6,7 @@ firebase.initializeApp({
   storageBucket: "whoilikecompatability.appspot.com",
   messagingSenderId: "480494029647",
   appId: "1:480494029647:web:d492ab57e34ab2ee28133a",
-  measurementId: "G-0G20GHE1W5"
+  measurementId: "G-0G20GHE1W5",
 });
 
 const encrypt = (message, key) => {
@@ -63,6 +63,8 @@ form.addEventListener("submit", (e) => {
   for (i = 0; i < items[1].value.length; i++) {
     likeNumber = likeNumber + items[1].value.charCodeAt(i);
   }
+
+  percentDisplay.style.display = "block";
 
   // console.log("Percent: ", convertToPercent(userNumber / likeNumber));
   percentDisplay.innerHTML = `Percent: ${Math.round(

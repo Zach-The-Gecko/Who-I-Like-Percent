@@ -1,32 +1,56 @@
-#submittingContainer {
-  background-color: #1560d1;
-  border: 1px solid #1560d1;
+body {
+  background-color: #feffc1;
+}
+
+#submissionContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.submitSection {
+  width: 60%;
+  background-color: #f09a61;
+  padding: 3em;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  color: #000000;
+}
+
+#percent {
+  display: none;
+}
+
+#divider {
+  width: 60%;
   margin: 20px;
+  padding: 0 3em;
+  border: 1px solid #000;
   border-radius: 10px;
+  height: 1px;
+  background-color: #000;
+}
+
+input {
+  background-color: #feffc1;
+  color: black;
+  padding: 3px;
+  border: 1px solid #feffc1;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 1em;
+  width: fit-content;
+  background-color: #df5151;
+  padding: 0.5em;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+#form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.seperator {
-  padding: 3em;
-}
-
-#left {
-  text-align: center;
-  border-right: 1px solid #1560d1;
-}
-
-#right {
-  border-left: 1px solid #1560d1;
-  display: flex;
-  justify-content: center;
-}
-
-#submit {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  justify-self: center;
-  width: fit-content;
+  align-items: center;
 }
