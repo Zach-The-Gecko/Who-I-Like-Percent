@@ -1,8 +1,12 @@
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-  apiKey: "AIzaSyBIQX-aCniMb-qfrhfem6IO4Q_sR_P1u3c",
-  authDomain: "whoilikepercent.firebaseapp.com",
-  projectId: "whoilikepercent",
+  apiKey: "AIzaSyA1MfYe3LZNAny1l7uv45dwQ52i1fzKzwg",
+  authDomain: "whoilikecompatability.firebaseapp.com",
+  projectId: "whoilikecompatability",
+  storageBucket: "whoilikecompatability.appspot.com",
+  messagingSenderId: "480494029647",
+  appId: "1:480494029647:web:d492ab57e34ab2ee28133a",
+  measurementId: "G-0G20GHE1W5"
 });
 
 const encrypt = (message, key) => {
