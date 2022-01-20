@@ -1,0 +1,32 @@
+#submittingContainer {
+  background-color: #1560d1;
+  border: 1px solid #1560d1;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.seperator {
+  padding: 3em;
+}
+
+#left {
+  text-align: center;
+  border-right: 1px solid #1560d1;
+}
+
+#right {
+  border-left: 1px solid #1560d1;
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  width: fit-content;
+}

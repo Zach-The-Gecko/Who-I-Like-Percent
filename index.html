@@ -4,20 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Who I Like Percent</title>
   </head>
   <body>
-    <h1>Get a Percent</h1>
-    <p id="instructions">
-      Put in your name and the name of the person you like, and it will give you
-      a percent for your compatability based on your names
-    </p>
-    <h2 id="percent"></h2>
-    <form id="form">
-      <input name="myName" type="text" placeholder="Your Name" />
-      <input name="theirName" type="text" placeholder="Who You Like" />
-      <button type="submit">Submit</button>
-    </form>
+    <div id="submittingContainer">
+      <div id="left" class="seperator">
+        <h1>Get a Percent</h1>
+        <p id="instructions">
+          Put in your name and the name of the person you like, and it will give
+          you a percent for your compatability based on your names
+        </p>
+      </div>
+      <div id="right" class="seperator">
+        <h2 id="percent"></h2>
+        <form id="form">
+          <h3 class="rightContent">Your Name</h3>
+          <input
+            name="myName"
+            type="text"
+            placeholder="Your Name"
+            class="rightContent"
+          />
+          <h3 class="rightContent">Who You Like</h3>
+          <input
+            name="theirName"
+            type="text"
+            placeholder="Who You Like"
+            class="rightContent"
+          />
+        </form>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
     <script src="/cipherLib.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
